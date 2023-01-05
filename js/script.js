@@ -73,7 +73,15 @@ window.addEventListener('DOMContentLoaded',()=>{
     prev.addEventListener('click',()=>{
         plusSlide(-1);
     })
-
+    // таймер
+    const timeEnd = '2023-02-05 13:00:00';
+    let timer = document.querySelector('.timer'),
+        days = timer.querySelector('#days'),
+        hours = timer.querySelector('#hours'),
+        minutes = timer.querySelector('#minutes'),
+        seconds = timer.querySelector('#seconds'),
+        t = Date.parse(timeEnd)-Date.parse(new Date());
+        
 
 
 
